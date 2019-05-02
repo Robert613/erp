@@ -44,7 +44,7 @@ public class AdminController {
 			loginsService.addLogin(logins);
 			return "/index";
 		}else{
-			model.addAttribute("error", "����ֻ��ź����벻ƥ��,�����������");
+			model.addAttribute("error", "你的手机号和密码不匹配，请重新输入");
 			model.addAttribute("phone", admin.getPhone());
 			model.addAttribute("password", admin.getPassword());
 			return "/login";
